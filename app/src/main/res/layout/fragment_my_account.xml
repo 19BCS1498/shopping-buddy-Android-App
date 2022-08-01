@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activties.fragments.MyAccountFragment">
+
+
+    <ImageView
+        android:id="@+id/img_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/aman"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Profile_Image"/>
+    <TextView
+        android:id="@+id/txt_account_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_account"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Profile Name : Aman Kumar"
+        android:textColor="#455a64"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txt_account_sex_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_account_name"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Sex: Male        Age: 20 years"
+        android:textColor="#455a64"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txt_account_email_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_account_sex_age"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Email: demo123@gmail.com"
+        android:textColor="#455a64"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txt_account_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_account_email_ID"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="@string/demo_address"
+        android:textColor="#455a64"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txt_account_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_account_address"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Phone Number: 8900457321"
+        android:textColor="#455a64"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txt_account_payment_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_account_phone"
+        android:layout_margin="5dp"
+        android:text="Payment Method:"
+        android:drawableRight="@drawable/visa"
+        android:textSize="15sp"
+        android:textColor="#455a64"/>
+    <util.MSPButton
+        android:id="@+id/btn_edit_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_background"
+        android:text="EDIT"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>

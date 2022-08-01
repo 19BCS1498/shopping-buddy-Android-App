@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activties.fragments.AboutUsFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_about_us_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="Application created by:"
+                android:gravity="center"
+                android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/img_student1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_about_us_heading"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:src="@drawable/aman"/>
+    <TextView
+        android:id="@+id/txt_student1_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_student1"
+        android:padding="13dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text="Name : Aman Kumar UID: 19BCS1498"/>
+    <TextView
+        android:id="@+id/txt_student1_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_student1_name"
+        android:padding="13dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text="Email:19BCS1498@cuchd.in Phone No.: 6202607612"/>
+
+    <ImageView
+        android:id="@+id/img_student2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_below="@+id/txt_student1_email"
+        android:src="@drawable/student2"/>
+    <TextView
+        android:id="@+id/txt_student2_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_student2"
+        android:padding="13dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text="Name : Nikhil UID: 19BCS1285"/>
+    <TextView
+        android:id="@+id/txt_student2_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_student2_name"
+        android:padding="13dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text="Email:19BCS1285@cuchd.in Phone No.: 8219344115"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:weightSum="6"
+    android:background="#ffffff"
+    android:elevation="1dp">
+
+    <ImageView
+        android:id="@+id/imgv_recycle_view_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/logo2"
+        android:elevation="0.5dp"
+        android:background="#e8f5e9"
+        android:scaleType="centerCrop"/>
+    <RelativeLayout
+        android:id="@+id/relative_details_products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/txt_recycle_view_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:padding="6dp"
+            android:text="Product Name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt_recycle_view_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_recycle_view_product_name"
+        android:text="Company Name"
+        android:textSize="15sp"
+        android:padding="8dp"/>
+        <TextView
+            android:id="@+id/txt_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_recycle_view_company_name"
+            android:text="$7/piece"
+            android:textSize="15sp"
+            android:padding="7dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rating_and_add_wishlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_product_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="4.5"
+            android:textColor="#ffeb3b"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_action_star" />
+        <ImageButton
+            android:id="@+id/img_btn_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_product_rating"
+            android:src="@drawable/ic_action_unchecked" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
